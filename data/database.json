@@ -1,0 +1,40 @@
+{
+    "blogs": [
+        {
+            "title": "I'm developer",
+            "body": "Management code is my round",
+            "author": "Tchasinga",
+            "id": 1
+        },
+        {
+            "title": "Front-end designer",
+            "body": "Page is an great part of works",
+            "author": "Dr-donice",
+            "id": 2
+        },
+        { 
+            "title": "Back-end designer",
+            "body": "Page which is operating with server side",
+            "author": "Jack",
+            "id": 3
+        },
+        {
+            "title": "React js",
+            "body": "Learn Reactjs to build awesome web application",
+            "author": "Balolebwami",
+            "id" : "4"
+        },
+        {
+            "title": "Java",
+            "body": "Reactjs to build awesome web application",
+            "author": "Balolebwami",
+            "id" : "5"
+        },
+        {
+            "title": "Native react",
+            "body": "React native to build awesome web application android",
+            "author": "Balolebwami",
+            "id" : "6"
+        }
+    ]
+}
