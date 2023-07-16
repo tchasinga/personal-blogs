@@ -4,10 +4,10 @@ import Loadingsystemduringapicall from "../Hook/Loadingpages";
 import Messagingyourerrors from "../Errors/Messagebugs";
 const Blogdetails = () => {
     const { id } = useParams()
-    const {data: blog, isPending , error} = Selftdisplayingdata('http://localhost:8000/blogs/' + id)
+    const {data: blog, isPending , error} = Selftdisplayingdata('http://localhost:9000/blogs/' + id)
      const history = useHistory();
      const handleDelete = () =>{
-        fetch('http://localhost:8000/blogs/' + id, {
+        fetch('http://localhost:9000/blogs/' + id, {
             method: 'DELETE'
         })
         .then(() => {
