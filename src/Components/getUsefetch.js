@@ -6,8 +6,11 @@ const Selftdisplayingdata = (url) => {
     const [error , setErrors] = useState(null) 
     // useEffect using fetch request , for database using local API
     useEffect(() => {
+        //used to clean data after playing with Data
+        const abortCont = new AbortController();
+
        setTimeout(() =>{
-        fetch(url)
+        fetch(url, {signal: abortCont.signal})
         .then( res => {
             if(!res.ok){
                 throw new Error(<Messagingyourerrors/>)
@@ -18,13 +21,17 @@ const Selftdisplayingdata = (url) => {
             console.log(data) 
             setData(data)
             setIsPending(false) 
-            setErrors(null)
+            setErrors(false)
         })
         .catch(err => {
+            if(err.name === 'AbortError'){
+              console.log('fetch code data')
+            }
             setIsPending(false)
             setErrors(<Messagingyourerrors/>)
         })
        }, 3000)
+       return () => abortCont.abort()
     }, [url])
 
     return {

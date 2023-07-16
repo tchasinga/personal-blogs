@@ -4,6 +4,8 @@
   font-family: 'Poppins' , sans-serif;
   margin: 0;
   color: #333;
+  list-style: none;
+  text-decoration: none;
 }
 
 .navbar{
@@ -165,4 +167,57 @@ span{
   100% {
     transform: rotate(-360deg);
   }
+}
+
+/* New Animating side of propagationg when an errorns occurs */
+
+.blog-details{
+  font-size: 20px;
+  color: #c9446c;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.blog-details div{
+  margin: 20px 0;
+}
+
+.blog-details button{
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* designing form */
+
+.creater{
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.creater label{
+  text-align: left;
+  display: block;
+}
+
+.creater input, .creater textarea, .creater select{
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+ display: block;
+}
+
+.creater button{
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
 }
