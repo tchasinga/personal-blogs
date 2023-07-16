@@ -1,0 +1,24 @@
+to make a fake APi first you need to follow requirement : 
+
+1. create directory "data"
+2. create file "database.json"
+3. open terminal 
+4. run : npx json-server --watch database.json --poirt 
+
+final output :
+
+
+  Loading data/database.json
+  Done
+
+  Resources
+  http://localhost:8000/blogs
+
+  Home
+  http://localhost:8000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+
+GET /blogs 200 34.486 ms - 762
+GET /blogs 200 9.053 ms - 762
